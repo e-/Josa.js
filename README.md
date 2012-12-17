@@ -1,20 +1,20 @@
-# Josa
+# josa.js
 
-Josa.js는 한국어 조사인 은/는, 을/를, 이/가를 구분해주는 자바스크립트 라이브러리입니다.
+josa.js는 한국어 조사인 은/는, 을/를, 이/가를 구분해주는 자바스크립트 라이브러리입니다.
 
 ## 사용법
 
 ### 설치
 
-웹 페이지에 Josa.js 파일을 삽입합니다.
+웹 페이지에 josa.js 파일을 삽입합니다.
 
 ```html
-<script src="Josa.js" type="text/javascript"></script>
+<script src="josa.js" type="text/javascript"></script>
 ```
 
 ### Josa Namespace
 
-Josa.js 스크립트를 실행하면 전역 객체에 Josa 객체가 노출됩니다.
+josa.js 스크립트를 실행하면 전역 객체에 Josa 객체가 노출됩니다.
 
 ### Josa.c ( String word, String format ) => String
 
@@ -39,7 +39,7 @@ Josa.c('사과','을를'); // '를'
 
 ## 팁
 
-코드의 가독성을 위해 Josa.c를 wrapping한 함수를 사용하는 것이 좋습니다.
+코드의 가독성을 위해 `Josa.c`를 wrapping한 함수를 사용하는 것이 좋습니다.
 
 ```js
 var word = '임의의 단어'

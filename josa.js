@@ -1,4 +1,4 @@
-;var Josa = (function(){
+(function(){
   var	_f = [
     function(string) { //을/를 구분
       return _hasJong(string) ? '을' : '를';
@@ -30,10 +30,23 @@
     return (string - 0xac00) % 28 > 0;
   }
 
-  return {
+  var josa = {
     c: function(word, format){
-       if (typeof _formats[format] === 'undefined') throw 'Invalid format!';
-       return _formats[format](word);
-     }
+      if (typeof _formats[format] === 'undefined') throw 'Invalid format!';
+      return _formats[format](word);
+    },
+    r: function(word, format) {
+      return word + josa.c(word, format);
+    }
   };
+
+  if (typeof define == 'function' && define.amd) {
+    define(function(){
+      return josa;
+    });
+  } else if (typeof module !== 'undefined') {
+    module.exports = josa;
+  } else {
+    window.Josa = josa;
+  }
 })();

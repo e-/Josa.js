@@ -1,0 +1,26 @@
+{
+  "name": "josa-js",
+  "version": "0.0.2",
+  "description": "josa.js는 한국어 조사인 은/는, 을/를, 이/가를 구분해주는 자바스크립트 라이브러리입니다.",
+  "main": "josa.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/e-/Josa.js.git"
+  },
+  "keywords": [
+    "Hangul",
+    "Korean"
+  ],
+  "author": "jaeminjo <jmjo@hcil.snu.ac.kr> (http://www.jaeminjo.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/e-/Josa.js/issues"
+  },
+  "homepage": "https://github.com/e-/Josa.js#readme"
+}

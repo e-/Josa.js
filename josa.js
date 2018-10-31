@@ -8,6 +8,9 @@
     },
     function(string){ //이/가 구분
       return _hasJong(string) ? '이' : '가';
+    },
+    function(string){ //와/과 구분
+      return _hasJong(string) ? '과' : '와';
     }
   ],
     _formats = {
@@ -22,7 +25,11 @@
       '이/가' : _f[2],
       '이' : _f[2],
       '가' : _f[2],
-      '이가' : _f[2]
+      '이가' : _f[2],
+      '와/과' : _f[3],
+      '와' : _f[3],
+      '과' : _f[3],
+      '와과' : _f[3]
     };
 
   function _hasJong(string){ //string의 마지막 글자가 받침을 가지는지 확인

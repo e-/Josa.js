@@ -45,6 +45,16 @@ $(function(){
 			'는',
 			"Josa.c('바구니', '는')"
 		);
+		assert.deepEqual(
+			Josa.c('도시', '으로/로'),
+			'로',
+			"Josa.c('도시', '로')"
+		);
+		assert.deepEqual(
+			Josa.c('도심', '으로/로'),
+			'으로',
+			"Josa.c('도심', '으로')"
+		);
 	});
 	QUnit.test ('Josa.r', function(assert){
 		assert.deepEqual(

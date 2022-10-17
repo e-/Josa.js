@@ -13,7 +13,7 @@
       return _hasJong(string) ? '과' : '와';
     },
     function(string){ //으로/로 구분
-      return _hasJong(string) ?  (_hasRieulJong(string) ? '으로' : '로') : '로';
+      return _hasJong(string) ?  (_noRieulJong(string) ? '으로' : '로') : '로';
     }
   ],
     _formats = {
@@ -44,7 +44,7 @@
     return (string - 0xac00) % 28 > 0;
   }
 
-  function _hasRieulJong(string){ //string의 마지막 글자가 리을 받침을 가지는지 확인
+  function _noRieulJong(string){ //string의 마지막 글자가 리을 받침이 아닌 다른 받침을 가지는지 확인
     string = string.charCodeAt(string.length - 1);
     return (string - 0xac08) % 28 > 0;
   }

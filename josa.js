@@ -13,7 +13,7 @@
       return _hasJong(string) ? '과' : '와';
     },
     function(string){ //으로/로 구분
-      return _hasJong(string) ?  (_noRieulJong(string) ? '으로' : '로') : '로';
+      return _hasJong(string) ? (_noRieulJong(string) ? '으로' : '로') : '로';
     }
   ],
     _formats = {

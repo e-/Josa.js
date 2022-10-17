@@ -55,6 +55,11 @@ $(function(){
 			'으로',
 			"Josa.c('도심', '으로')"
 		);
+		assert.deepEqual(
+			Josa.c('강물', '으로/로'),
+			'로',
+			"Josa.c('강물', '로')"
+		);
 	});
 	QUnit.test ('Josa.r', function(assert){
 		assert.deepEqual(
